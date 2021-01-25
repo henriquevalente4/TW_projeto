@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneTech</title>
+    <link rel="stylesheet" href="style_index.css" />
+    <link rel="stylesheet" href="background.css">
+</head>
+
+<body>
+
+    <nav id="menu">
+
+        <ul>
+            <li><img class="logotipo" src="Fotos\Free_Sample_By_Wix.jpg" alt="logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="All_Products.html">Todos os Produtos</a></li>
+            <li><a href="mais_vendidos.html">Mais Vendidos</a></li>
+            <li><a href=#sobre>Sobre Nós/Info</a></li>
+            <li><a href="login_register.html">Login/Registo</a></li>
+            <li>
+                <a href="carrinho.html"><img id="carrinho" src="Fotos\carrinho.png" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--carrossel!-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <a href="All_Products.html"><img src="Fotos\apple-products-2018-100782368-large.jpg" style="width:100%"></a>
+            <div class="text">Todos os Produtos</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <a href="index.html"><img src="Fotos\Apple11launch.jpg" style="width:100%"></a>
+            <div class="text">Novidades</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Fotos\featured_img_upcoming_apple_products.jpg" style="width:100%">
+            <div class="text">Brevemente...</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+    <!--carrossel-->
+
+
+
+
+
+
+    <div class="container">
+        <h1>Mais Vendidos</h2>
+            <br>
+            <div class="productcont">
+                <div class="product">
+                    <a href="prod_generico.html">
+                        <h3 class="productname">Apple AirPods 2019 </h3>
+                    </a>
+                    <br>
+                    <a href="prod_generico.html"><img src="Fotos\airpods.png" alt="product"></a>
+                    <p>Apple AirPods 2019</p>
+                    <p class="price">€129.99</p>
+                    <a href="carrinho.html"><button class="addtocart">Comprar</button></a>
+                </div>
+
+
+                <div class="product">
+                    <a href="prod_generico.html">
+                        <h3 class="productname">iPhone XR</h3>
+                    </a>
+                    <br>
+                    <a href="prod_generico.html"><img src="Fotos\iPhonexr.png" alt="product"></a>
+                    <p>iPhone XR -- Preto</p>
+                    <p class="price">€609.99</p>
+                    <a href="carrinho.html"><button class="addtocart">Comprar</button></a>
+                </div>
+
+                <div class="product">
+                    <a href="prod_iphone12.html">
+                        <h3 class="productname">iPhone 12</h3>
+                    </a>
+                    <br>
+                    <a href="prod_iphone12.html"><img src="Fotos\iphone12.png" alt="product"></a>
+                    <p>iPhone 12 -- Preto</p>
+                    <p class="price">829.99€</p>
+                    <a href="carrinho.html"><button class="addtocart">Comprar</button></a>
+                </div>
+
+            </div>
+    </div>
+
+
+
+    <footer>
+
+        <ul class="info" id="informaçoes">
+            <li>
+                <h4>INFORMAÇÕES</h4>
+            </li>
+            <li id="hover"><a href="#">Metodos de Pagamento</a></li>
+            <li id="hover"><a href="#">Envio de Encomendas</a></li>
+            <li id="hover"><a href="#">Trocas e Devoluções</a></li>
+            <li id="hover"><a href="#">Garantia e RMA's</a></li>
+            <li id="hover"><a href="#">Politica de Privacidade</a></li>
+            <li id="hover"><a href="#">Blog PhoneTech</a></li>
+        </ul>
+
+        <ul id="contactos">
+            <li>
+                <h4>CONTACTOS</h4>
+            </li>
+            <li id="hover">Telemóvel: <br> 919 919 919</li>
+            <li id="hover">Telefone: <br> 22 4784 435</li>
+            <li id="hover">Fax: <br> 22 7914 440</li>
+        </ul>
+
+        <ul id="localizaçao">
+            <li><br>
+                <h4>LOCALIZAÇÃO</h4>
+            </li>
+            <li id="hover">Loja do Porto:
+                <p></p> Rua dos Carvalhos, 8769 4000-789 Porto</li>
+            <p></p>
+            <li id="hover">Loja de Gaia:
+                <p></p> Travessa da Moitinha, 98 4100-159 Gaia</li>
+            <p></p>
+            <li id="hover">Loja de Leiria:
+                <p></p> Rua da Amoreira-Maia, 14 2505-789 Nazaré</li>
+            <p></p>
+            <li id="hover">Loja de Lisboa:
+                <p></p> Rua das Descobertas, 452 2050-110 Cascais</li>
+        </ul>
+
+        <ul id="sobre">
+            <li>
+                <h4>SOBRE</h4>
+            </li>
+            <li id="hover"><a href="#.asp">FAQ</a></li>
+            <li id="hover"><a href="#.asp">Termos de Serviço</a></li>
+            <li id="hover"><a href="#.asp">História</a></li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
