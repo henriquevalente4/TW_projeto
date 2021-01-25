@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+*, ::before, ::after { box-sizing: border-box; }
+
+
+* {box-sizing: border-box; justify-content: center;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        
+        
+        .slideshow-container {
+          max-width: 1200px;
+          position: relative;
+          margin: auto;
+        }
+        .slideshow-container img {
+          height: 650px;
+          width: 1200px;
+        }
+        
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+/*css Carrossel*/
+
+
+
+
+
+
+
+#menu {
+  padding:0px;
+  margin:0px;
+  background-color:white;
+  list-style:none;
+  background-image: url(Fotos\Free_Sample_By_Wix.jpg);
+}
+#menu ul li { display: inline; }
+
+
+
+#menu ul li a {
+  padding: 30px 10px;
+  display: inline-block;
+  background-color:white;
+  color: #333;
+  text-decoration: none;
+  border-bottom:3px solid white;
+}
+
+
+#menu ul li a:hover {
+  background-color:#D6D6D6;
+  color: #6D6D6D;
+  border-bottom:3px solid orange;
+}
+
+#carrinho:hover {
+  background-color:#D6D6D6;
+  color: #6D6D6D;
+  border-bottom:3px solid orange;
+}
+
+#carrinho {
+  width: 40px;
+  height: 40px;
+}
+h2 {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin:auto;
+  text-align: center;
+  clear:left ;
+}
+
+img {
+  max-width: auto ;
+  max-height: auto;
+  text-align: center;
+  
+}
+/*mid_container*/
+hr {
+  border:none;
+  background:#E0E4CC;
+  height:1px;
+/*   width:60%;
+  display:block;
+  margin-left:0; */
+}
+.container {
+  max-width: 1200px; 
+  margin: 1em auto; 
+  background:#FFF; 
+  padding:30px;
+  border-radius:5px;
+}
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+.container a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.productcont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.product {
+  padding:1em; 
+  border:1px solid #E0E4CC; 
+  margin-right:1em; 
+  border-radius:5px;
+}
+
+
+
+button, input[type="submit"] { 
+  border:1px solid #FA6900; 
+  color:#fff; 
+  background: #F38630; 
+  padding:0.6em 1em;
+  font-size:1em; 
+  line-height:1; 
+  border-radius: 1.2em;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+  background: #A7DBD8;
+  border-color:#69D2E7;
+  color:#000;
+  cursor: pointer;
+}
+
+
+.container img {
+  height: 256px;
+  width: 256px;
+}
+
+/*mid_container*/
+
+
+figure img {
+  height: 200px;
+  width: 155px;
+}
+
+
+figure:hover img {
+	opacity: 0.25;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+
+footer {
+  padding:0px;
+  margin:0px;
+  background-color:white;
+  list-style:none;
+  clear: both;
+  display: flex;
+  
+}
+
+footer li {
+  list-style: none;
+}
+
+footer ul li a {
+  padding: 5px 5px;
+  display: inline-block;
+  background-color:white;
+  color: #333;
+  text-decoration: none;
+  border-bottom:0px solid white;
+}
+
+footer ul li a:hover {
+  background-color:#D6D6D6;
+  color: #6D6D6D;
+  border-bottom:3px solid orange;
+}
+footer #hover:hover {
+  background-color:#D6D6D6;
+  color: #6D6D6D;
+  border-bottom:3px solid orange;
+}
+
+#novidades img {
+  height: 100;
+  width: 100;
+}
+
+
+#sobre,
+#contactos,
+#informaçoes {
+  line-height: 50px;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+  display: grid;
+}
+
+  @media screen and (min-width: 768px) {
+    body {
+      background: white;
+      margin:auto;
+      text-align: center;
+    }
+    
+    figure {
+      float: left;
+      width: 42%;
+      margin-right: 4.5%;
+      text-align: center;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    body {
+      background: white;
+      margin:auto;
+      max-width: 1130px;
+      text-align: center;
+    }
+    
+    figure {
+      width: 28%;
+      margin-right:2.5%;
+      text-align: center;
+    }
+  } 
+
+  @keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+
+
+
